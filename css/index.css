@@ -6,13 +6,29 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #424040;
+    background: #929292;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #000000;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 nav{
     display: flex;
     align-items:flex-end;
     justify-content: space-between;
     padding: 20px 50px;
-    background: #dd2f2f;
+    background: #000000;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    background: none;
+    width: ;
+
     
 }
