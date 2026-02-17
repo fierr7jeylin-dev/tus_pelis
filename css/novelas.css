@@ -5,55 +5,59 @@ color:#fff;
 margin:0;
 }
 
-header{
-    position:relative;
-    overflow:hidden;
+.header{
+position:relative;
+height:60vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
 }
 
+/* VIDEO FONDO */
 
-
-header video{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    filter:brightness(55%);
+.bg-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:0;
+filter:brightness(0.4);
 }
 
+/* CAPA OSCURA */
 
-
-header::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(to top, rgba(0,0,0,.95), rgba(0,0,0,.3));
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(to bottom, rgba(0,0,0,0.2), #000);
+z-index:1;
 }
 
+/* TEXTO ENCIMA DEL VIDEO */
 
-
-header h1{
-    position:center;
-    font-family:'Bebas Neue', sans-serif;
-    color: #e50914;
-    z-index:2;
-
-}
-header p{
-    font-family:'Bebas Neue', sans-serif;
-    color: white;
-    z-index:2;
+.header-content{
+position:relative;
+z-index:2;
 }
 
+.header h1{
+font-family:'Bebas Neue',sans-serif;
+font-size:3.5rem;
+color:#e50914;
+letter-spacing:2px;
+}
 
-
-header{
-    height:75vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+.header p{
+color:#ddd;
+font-weight:600;
+margin-top:10px;
 }
 
 .navbar{
@@ -80,6 +84,7 @@ font-weight:600;
 .active{
 color:#e50914;
 }
+
 
 .novela-container{
 padding:50px 6%;
@@ -124,4 +129,11 @@ font-size:.85rem;
 .novelas-card:hover{
 transform:scale(1.08);
 box-shadow:0 10px 25px rgba(0,0,0,.9);
+}
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    color:#777;
+    margin-top:40px;
 }
