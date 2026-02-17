@@ -13,23 +13,54 @@ body{
 /* HEADER */
 
 header{
-    background:linear-gradient(to bottom, #000, #141414);
-    padding:25px;
-    text-align:center;
+    position:relative;
+    overflow:hidden;
 }
+
+
+
+header video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(55%);
+}
+
+
+
+header::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, rgba(0,0,0,.95), rgba(0,0,0,.3));
+}
+
 
 
 header h1{
+    position:center;
     font-family:'Bebas Neue', sans-serif;
-    color:#e50914;
-    font-size:56px;
-    margin-bottom:5px;
-    letter-spacing:2px;
+    color: #e50914;
+    z-index:2;
+
+}
+header p{
+    font-family:'Bebas Neue', sans-serif;
+    color: white;
+    z-index:2;
 }
 
-header p{
-     color:#bbb;
-    font-weight:300;
+
+
+header{
+    height:75vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
 /* MENU */
@@ -72,50 +103,51 @@ nav a:hover{
     width:95%;
     max-width:1300px;
     margin:auto;
-    padding:25px 0;
+    padding:30px;
 }
 
 /* TITULO */
 
 #series h2{
-    font-size:26px;
+    font-family:'Bebas Neue', sans-serif;
     margin-bottom:20px;
-    padding-left:10px;
-    border-left:4px solid #ff0000;
+    color:#e50914;
+    font-size:32px;
+    letter-spacing:1px;
 }
 
 /* GRID */
 
 .series-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     gap:18px;
 }
 
 /* TARJETAS */
 
 .series-card{
-    position:relative;
+     background:#1c1c1c;
     border-radius:6px;
     overflow:hidden;
+    transition:0.3s;
     cursor:pointer;
-    transition:.35s;
-    box-shadow:0 0 12px rgba(255,0,0,.15);
+    position:relative;
 }
 
 .series-card img{
     width:100%;
-    height:320px;
+    height:280px;
     object-fit:cover;
-    transition:.35s;
 }
+
 
 /* EFECTO ZOOM ROJO */
 
 .series-card:hover{
     transform:scale(1.08);
     z-index:5;
-    box-shadow:0 0 18px rgba(255,0,0,.6);
+    box-shadow:0 0 20px rgba(229,9,20,0.7);
 }
 
 .series-card:hover img{
@@ -125,38 +157,19 @@ nav a:hover{
 /* TEXTO SOBRE IMAGEN */
 
 .series-card h3{
-    position:absolute;
-    bottom:65px;
-    left:12px;
     font-size:18px;
-    opacity:0;
-    transition:.3s;
+    margin:10px;
+    font-weight:600;
 }
 
 .series-card p{
-    position:absolute;
-    bottom:12px;
-    left:12px;
-    right:12px;
     font-size:13px;
-    color:#ddd;
-    opacity:0;
-    transition:.3s;
+    color:#bbb;
+    margin:0 10px 15px;
 }
 
-.series-card:hover h3,
-.series-card:hover p{
-    opacity:1;
-}
 
-/* SOMBRA */
 
-.series-card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:linear-gradient(to top, rgba(0,0,0,.95), rgba(0,0,0,0));
-}
 
 /* SCROLL SUAVE */
 

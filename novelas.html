@@ -1,20 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novelas</title>
-    <link rel="stylesheet" href="./css/novelas.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novelas</title>
+<link rel="stylesheet" href="./css/novelas.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-     <nav>
+
+<header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>Plataforma de Entretenimiento</h1>
+        <p>Películas, Series, Novelas y Referencias</p>
+    </div>
+    <video class="bg-video" src="./img/bucle 3.mp4" autoplay loop muted></video>
+</header>
+
+<nav class="navbar">
     <ul>
         <li><a href="index.html">Películas</a></li>
         <li><a href="serie.html">Series</a></li>
-        <li><a href="novelas.html">Novelas</a></li>
+        <li><a href="novelas.html" class="active">Novelas</a></li>
         <li><a href="referencias.html">Referencias</a></li>
     </ul>
 </nav>
-    
+
+<section class="novela-container">
+    <h2>Trama que te hace parte de cada historia</h2>
+
+    <div class="novelas-grid">
+
+        <div class="novelas-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/The_Sopranos_Season_1_DVD.jpg/250px-The_Sopranos_Season_1_DVD.jpg">
+            <div class="info">
+                <h3>The Sopranos</h3>
+                <p>Un mafioso de Nueva Jersey lucha por equilibrar su vida criminal con su vida familiar.</p>
+            </div>
+        </div>
+
+        <div class="novelas-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/The_Wire_Season_1_DVD.jpg/250px-The_Wire_Season_1_DVD.jpg">
+            <div class="info">
+                <h3>The Wire</h3>
+                <p>Explora la vida en Baltimore desde la policía hasta los traficantes de drogas.</p>
+            </div>
+        </div>
+
+        <div class="novelas-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Mad_Men_Season_1_DVD.jpg/250px-Mad_Men_Season_1_DVD.jpg">
+            <div class="info">
+                <h3>Mad Men</h3>
+                <p>Drama ambientado en los años 60 sobre publicistas y sus conflictos personales.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>
