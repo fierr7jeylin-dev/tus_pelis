@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+*{
+    margin:0;
+    padding:0;
+=======
 body{
 font-family:'Montserrat',sans-serif;
 background:#000;
@@ -129,6 +134,7 @@ font-size:.85rem;
 .novelas-card:hover{
 transform:scale(1.08);
 box-shadow:0 10px 25px rgba(0,0,0,.9);
+<<<<<<< HEAD
 }
 footer{
     background:#000;
@@ -136,4 +142,7 @@ footer{
     padding:20px;
     color:#777;
     margin-top:40px;
+=======
+>>>>>>> 0d6cc6d31cd8d9b33b7f8d73634fed5e4c197d0a
+>>>>>>> de515d8b798aacffa5303716105707294a5942aa
 }
