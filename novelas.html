@@ -1,236 +1,145 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novelas</title>
-    <link rel="stylesheet" href="./css/novelas.css">
-     
-</head>
-<body>
+    <title>TUS_PELIS.COM | Novelas</title>
+
+    <!-- Favicon opcional -->
+    <link rel="icon" href="./img/logo.png">
+
+    <!-- Google Fonts (solo una vez) -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-     
-    <header>
-    <h1>Plataforma de Entretenimiento</h1>
-    <p>Películas, Series, Novelas y Referencias</p>
-    <video width="800" height="360" src="./img/bucle 3.mp4" autoplay loop muted></video>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/novelas.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <video class="bg-video" src="./img/bucle 3.mp4" autoplay loop muted playsinline></video>
+        <div class="overlay"></div>
+
+        <div class="header-content">
+            <h1>TUS_PELIS.COM</h1>
+            <p>Películas, series, novelas y referencias en un solo lugar.</p>
+        </div>
     </header>
-   
-   
-    <nav>
-    <ul>
-        <li><a href="index.html">Películas</a></li>
-        <li><a href="serie.html">Series</a></li>
-        <li><a href="novelas.html">Novelas</a></li>
-        <li><a href="referencias.html">Referencias</a></li>
-    </ul>
-</nav>
-    
 
+    <!-- ================= NAVBAR ================= -->
 
-<div class="novela-container">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Películas</a></li>
+            <li><a href="serie.html">Series</a></li>
+            <li><a href="novelas.html" class="active">Novelas</a></li>
+            <li><a href="referencias.html">Referencias</a></li>
+        </ul>
+    </nav>
 
-        <!--novelas-->
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
 
-        <section id="novelas">
-            <h2>Trama que te hace parte de cada historia</h2>
+    <main>
+
+        <section class="novela-container">
+            <h2>Tramas que te hacen parte de cada historia</h2>
 
             <div class="novelas-grid">
-                <div class="novelas-card">
-                    <img src="https://tse2.mm.bing.net/th/id/OIP.phowlS_X2hCQXn_G6LHGJQHaLH?cb=defcache2&defcache=1&w=960&h=1440&rs=1&pid=ImgDetMain&o=7&rm=3">
-                    <h3>The Sopranos</h3>
-                    <p>Un mafioso de Nueva Jersey lucha por equilibrar su vida criminal con su vida familiar. </p>
-                </div>
 
-                <div class="novelas-card">
-                    <img src="https://tse1.mm.bing.net/th/id/OIP.I1y27pjRfEVHSdPfbEnngwHaFj?cb=defcache2&defcache=1&w=1000&h=750&rs=1&pid=ImgDetMain&o=7&rm=3">
-                    <h3>The Wire</h3>
-                    <p>Explora la vida en Baltimore a través de la perspectiva de la policía, los traficantes de drogas y otros personajes. </p>
-                </div>
+                <article class="novelas-card">
+                    <img src="https://th.bing.com/th/id/R.a58b2ec93d48e56e2d6fc5a6dafdd677?rik=NpRW5rn27Dzhbw&pid=ImgRaw&r=0" alt="Café con Aroma de Mujer">
+                    <div class="card-info">
+                        <h3>Café con Aroma de Mujer</h3>
+                        <p>La historia de amor entre Gaviota y Sebastián.</p>
+                    </div>
+                </article>
 
-               
+                <article class="novelas-card">
+                    <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/tv/nmRB8nH92Xx6cqO4KT4fCrpKWwFi9A.jpg" alt="Yo Soy Betty la Fea">
+                    <div class="card-info">
+                        <h3>Yo Soy Betty, la Fea</h3>
+                        <p>Una economista brillante enfrenta amor y superación.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://alchetron.com/cdn/pasin-de-gavilanes-c9b8e3fd-cd25-494e-9831-a263b10e0d6-resize-750.jpeg" alt="Pasión de Gavilanes">
+                    <div class="card-info">
+                        <h3>Pasión de Gavilanes</h3>
+                        <p>Tres hermanos buscan venganza, pero el amor cambia todo.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3T5mSuziI0TMa7z9R5w3vNl2qok.jpg" alt="La Reina del Flow">
+                    <div class="card-info">
+                        <h3>La Reina del Flow</h3>
+                        <p>Una compositora busca venganza y justicia.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://images.justwatch.com/poster/264033200/s718/sin-senos-no-hay-paraiso.jpg" alt="Sin Senos No Hay Paraíso">
+                    <div class="card-info">
+                        <h3>Sin Senos No Hay Paraíso</h3>
+                        <p>Una joven entra al mundo del narcotráfico.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.-90AwfM33BodHi7j1remQAHaJW?cb=defcache2" alt="El Cartel de los Sapos">
+                    <div class="card-info">
+                        <h3>El Cartel de los Sapos</h3>
+                        <p>Ascenso y caída del narcotráfico colombiano.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://artworks.thetvdb.com/banners/posters/5c26723a35044.jpg" alt="La Hija del Mariachi">
+                    <div class="card-info">
+                        <h3>La Hija del Mariachi</h3>
+                        <p>Un empresario huye y encuentra amor en Colombia.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://media.themoviedb.org/t/p/w500/bYrC9ReL44aNI6uxAYSGN50r7Yb.jpg" alt="Los Ricos También Lloran">
+                    <div class="card-info">
+                        <h3>Los Ricos También Lloran</h3>
+                        <p>Drama, injusticias y amor en una familia millonaria.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://artworks.thetvdb.com/banners/posters/80401-3.jpg" alt="Rebelde">
+                    <div class="card-info">
+                        <h3>Rebelde</h3>
+                        <p>Estudiantes forman una banda musical.</p>
+                    </div>
+                </article>
 
+                <article class="novelas-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.C7MQ7vp2jYWJTnEi9-G3NQHaKL?cb=defcache2" alt="La Usurpadora">
+                    <div class="card-info">
+                        <h3>La Usurpadora</h3>
+                        <p>Dos hermanas intercambian vidas.</p>
+                    </div>
+                </article>
 
+            </div>
+        </section>
 
-                <div class="novelas-card">
-    <img src="https://th.bing.com/th/id/R.a58b2ec93d48e56e2d6fc5a6dafdd677?rik=NpRW5rn27Dzhbw&pid=ImgRaw&r=0">
-    <h3>Café con Aroma de Mujer</h3>
-    <p>La historia de amor entre Gaviota, una recolectora de café, y Sebastián, un joven de familia cafetera adinerada.</p>
-</div>
+    </main>
 
-<div class="novelas-card">
-    <img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/tv/nmRB8nH92Xx6cqO4KT4fCrpKWwFi9A.jpg">
-    <h3>Yo Soy Betty, la Fea</h3>
-    <p>Una economista brillante pero poco agraciada trabaja en una empresa de moda donde enfrentará amor, burlas y superación.</p>
-</div>
+    <!-- ================= FOOTER ================= -->
 
-<div class="novelas-card">
-    <img src="https://alchetron.com/cdn/pasin-de-gavilanes-c9b8e3fd-cd25-494e-9831-a263b10e0d6-resize-750.jpeg">
-    <h3>Pasión de Gavilanes</h3>
-    <p>Tres hermanos buscan venganza, pero el amor cambiará sus planes al enamorarse de las hermanas Elizondo.</p>
-</div>
+    <footer>
+        <p>© 2026 TUS_PELIS.COM</p>
+        <p><strong>Desarrollado por Vargas y Sanchez</strong></p>
+    </footer>
 
-<div class="novelas-card">
-    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3T5mSuziI0TMa7z9R5w3vNl2qok.jpg">
-    <h3>La Reina del Flow</h3>
-    <p>Una talentosa compositora de reguetón busca venganza contra quienes arruinaron su vida años atrás.</p>
-</div>
-
-<div class="novelas-card">
-    <img src="https://images.justwatch.com/poster/264033200/s718/sin-senos-no-hay-paraiso.jpg">
-    <h3>Sin Senos No Hay Paraíso</h3>
-    <p>Una joven obsesionada con el dinero fácil se adentra en el peligroso mundo del narcotráfico.</p>
-</div>
-
-<div class="novelas-card">
-    <img src="https://tse4.mm.bing.net/th/id/OIP.-90AwfM33BodHi7j1remQAHaJW?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-    <h3>El Cartel de los Sapos</h3>
-    <p>Basada en hechos reales, muestra el ascenso y caída de narcotraficantes colombianos.</p>
-</div>
-
-<div class="novelas-card">
-    <img src="https://artworks.thetvdb.com/banners/posters/5c26723a35044.jpg">
-    <h3>La Hija del Mariachi</h3>
-    <p>Un empresario mexicano huye a Colombia y encuentra amor mientras se oculta de la justicia.</p>
-</div>
-
-<div class="novelas-card">
-    <img src="https://media.themoviedb.org/t/p/w500/bYrC9ReL44aNI6uxAYSGN50r7Yb.jpg">
-    <h3>Los Ricos También Lloran</h3>
-    <p>Una joven humilde llega a una familia millonaria donde vivirá dramas, injusticias y amor.</p>
-</div>
-
-<div class="novelas-card">
-    <img src="https://artworks.thetvdb.com/banners/posters/80401-3.jpg">
-    <h3>Rebelde</h3>
-    <p>Estudiantes de un prestigioso colegio forman una banda musical mientras enfrentan romances y conflictos.</p>
-</div>
-
-<div class="novelas-card">
-    <img src="https://tse3.mm.bing.net/th/id/OIP.C7MQ7vp2jYWJTnEi9-G3NQHaKL?cb=defcache2&defcache=1&rs=1&pid=ImgDetMain&o=7&rm=3">
-    <h3>La Usurpadora</h3>
-    <p>Dos hermanas idénticas intercambian vidas, desatando mentiras, amor y traiciones.</p>
-</div>
-
-
-
-</div>
-
-
-=======
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Novelas</title>
-<link rel="stylesheet" href="./css/novelas.css">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-<header class="header">
-
-    <video class="bg-video" src="./img/bucle 3.mp4" autoplay loop muted></video>
-
-    <div class="overlay"></div>
-
-    <div class="header-content">
-        <h1>PLATAFORMA DE ENTRETENIMIENTO</h1>
-        <p>PELÍCULAS, SERIES, NOVELAS Y REFERENCIAS</p>
-    </div>
-
-</header>
-<nav class="navbar">
-    <ul>
-        <li><a href="index.html">Películas</a></li>
-        <li><a href="serie.html">Series</a></li>
-        <li><a href="novelas.html" class="active">Novelas</a></li>
-        <li><a href="referencias.html">Referencias</a></li>
-    </ul>
-</nav>
-
-<section class="novela-container">
-<h2>TRAMA QUE TE HACE PARTE DE CADA HISTORIA</h2>
-
-<div class="novelas-grid">
-
-<div class="novelas-card">
-<img src="https://th.bing.com/th/id/R.a58b2ec93d48e56e2d6fc5a6dafdd677?rik=NpRW5rn27Dzhbw&pid=ImgRaw&r=0">
-<h3>Café con Aroma de Mujer</h3>
-<p>La historia de amor entre Gaviota y Sebastián.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://static1.moviewebimages.com/wordpress/wp-content/uploads/tv/nmRB8nH92Xx6cqO4KT4fCrpKWwFi9A.jpg">
-<h3>Yo Soy Betty, la Fea</h3>
-<p>Una economista brillante enfrenta amor y superación.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://alchetron.com/cdn/pasin-de-gavilanes-c9b8e3fd-cd25-494e-9831-a263b10e0d6-resize-750.jpeg">
-<h3>Pasión de Gavilanes</h3>
-<p>Tres hermanos buscan venganza, pero el amor cambia todo.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3T5mSuziI0TMa7z9R5w3vNl2qok.jpg">
-<h3>La Reina del Flow</h3>
-<p>Una compositora busca venganza y justicia.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://images.justwatch.com/poster/264033200/s718/sin-senos-no-hay-paraiso.jpg">
-<h3>Sin Senos No Hay Paraíso</h3>
-<p>Una joven entra al mundo del narcotráfico.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://tse4.mm.bing.net/th/id/OIP.-90AwfM33BodHi7j1remQAHaJW?cb=defcache2">
-<h3>El Cartel de los Sapos</h3>
-<p>Ascenso y caída del narcotráfico colombiano.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://artworks.thetvdb.com/banners/posters/5c26723a35044.jpg">
-<h3>La Hija del Mariachi</h3>
-<p>Un empresario huye y encuentra amor en Colombia.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://media.themoviedb.org/t/p/w500/bYrC9ReL44aNI6uxAYSGN50r7Yb.jpg">
-<h3>Los Ricos También Lloran</h3>
-<p>Drama, injusticias y amor en una familia millonaria.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://artworks.thetvdb.com/banners/posters/80401-3.jpg">
-<h3>Rebelde</h3>
-<p>Estudiantes forman una banda musical.</p>
-</div>
-
-<div class="novelas-card">
-<img src="https://tse3.mm.bing.net/th/id/OIP.C7MQ7vp2jYWJTnEi9-G3NQHaKL?cb=defcache2">
-<h3>La Usurpadora</h3>
-<p>Dos hermanas intercambian vidas.</p>
-</div>
-
-</div>
-</section>
-
-<footer>
-    <p>© 2026 TUS_PELIS.COM
-        <br>
-        <strong>Desarrollado por vargas y sanchez</strong>
-    </p>
-</footer>
 </body>
 </html>

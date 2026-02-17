@@ -44,10 +44,8 @@ header h1{
     font-family:'Bebas Neue', sans-serif;
     color: #e50914;
     z-index:2;
-<<<<<<< HEAD
     font-size: 4rem;
-=======
->>>>>>> 0d6cc6d31cd8d9b33b7f8d73634fed5e4c197d0a
+
 
 }
 header p{
@@ -152,12 +150,15 @@ section h2{
 
 /* FOOTER */
 
+
 footer{
-    background:#000;
+    background:#0f0f0f;
     text-align:center;
-    padding:20px;
+    padding:50px 20px;
+    margin-top:80px;
     color:#777;
-    margin-top:40px;
+    font-size:14px;
+    border-top:1px solid #222;
 }
 
 /* SCROLLBAR */
