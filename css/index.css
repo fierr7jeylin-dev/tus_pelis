@@ -10,7 +10,7 @@ body{
     color:#fff;
 }
 
-/* HEADER */
+
 header{
     background:linear-gradient(to bottom, #000, #141414);
     padding:25px;
@@ -27,7 +27,7 @@ header p{
     color:#bbb;
 }
 
-/* NAVBAR */
+
 nav{
     background:#000;
     border-bottom:1px solid #222;
@@ -56,25 +56,24 @@ nav ul li a:hover{
     color:#e50914;
 }
 
-/* CONTENEDOR */
+
 .container{
     padding:30px;
 }
 
-/* TITULOS */
 section h2{
     margin-bottom:20px;
     color:#e50914;
 }
 
-/* GRID TIPO NETFLIX */
+
 .grid{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     gap:18px;
 }
 
-/* TARJETAS */
+
 .card{
     background:#1c1c1c;
     border-radius:6px;
@@ -84,7 +83,7 @@ section h2{
     position:relative;
 }
 
-/* EFECTO HOVER NETFLIX */
+
 .card:hover{
     transform:scale(1.08);
     z-index:5;
@@ -97,7 +96,6 @@ section h2{
     object-fit:cover;
 }
 
-/* INFO OCULTA (tipo Netflix) */
 .card h3{
     font-size:16px;
     margin:10px;
@@ -109,7 +107,6 @@ section h2{
     margin:0 10px 15px;
 }
 
-/* FOOTER */
 footer{
     background:#000;
     text-align:center;
@@ -118,7 +115,7 @@ footer{
     margin-top:40px;
 }
 
-/* SCROLLBAR estilo Netflix */
+
 ::-webkit-scrollbar{
     width:8px;
 }
