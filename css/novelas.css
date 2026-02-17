@@ -1,4 +1,133 @@
+<<<<<<< HEAD
 *{
     margin:0;
     padding:0;
+=======
+body{
+font-family:'Montserrat',sans-serif;
+background:#000;
+color:#fff;
+margin:0;
+}
+
+header{
+    position:relative;
+    overflow:hidden;
+}
+
+
+
+header video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(55%);
+}
+
+
+
+header::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, rgba(0,0,0,.95), rgba(0,0,0,.3));
+}
+
+
+
+header h1{
+    position:center;
+    font-family:'Bebas Neue', sans-serif;
+    color: #e50914;
+    z-index:2;
+
+}
+header p{
+    font-family:'Bebas Neue', sans-serif;
+    color: white;
+    z-index:2;
+}
+
+
+
+header{
+    height:75vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.navbar{
+background:#000;
+padding:15px 0;
+text-align:center;
+}
+
+.navbar ul{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:0;
+}
+
+.navbar a{
+color:#ccc;
+text-decoration:none;
+font-weight:600;
+}
+
+.navbar a:hover,
+.active{
+color:#e50914;
+}
+
+.novela-container{
+padding:50px 6%;
+}
+
+.novela-container h2{
+font-family:'Bebas Neue',sans-serif;
+color:#e50914;
+margin-bottom:25px;
+}
+
+.novelas-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.novelas-card{
+background:#111;
+border-radius:6px;
+overflow:hidden;
+transition:.3s;
+cursor:pointer;
+}
+
+.novelas-card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.novelas-card h3{
+margin:10px;
+}
+
+.novelas-card p{
+margin:0 10px 15px;
+color:#bbb;
+font-size:.85rem;
+}
+
+.novelas-card:hover{
+transform:scale(1.08);
+box-shadow:0 10px 25px rgba(0,0,0,.9);
+>>>>>>> 0d6cc6d31cd8d9b33b7f8d73634fed5e4c197d0a
 }
