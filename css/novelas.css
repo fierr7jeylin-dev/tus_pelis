@@ -1,0 +1,269 @@
+/* ================= RESET ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --netflix-red:#e50914;
+    --bg-dark:#141414;
+    --bg-soft:#181818;
+    --text-soft:#b3b3b3;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:var(--bg-dark);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ================= HEADER CINEMÁTICO ================= */
+
+.header{
+    position:relative;
+    height:95vh;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    overflow:hidden;
+}
+
+.bg-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(40%) contrast(110%);
+    z-index:0;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(to top, var(--bg-dark) 5%, transparent 60%),
+        linear-gradient(to right, rgba(0,0,0,.7), transparent 50%);
+    z-index:1;
+}
+
+.header-content{
+    position:relative;
+    z-index:2;
+    max-width:600px;
+    animation:fadeUp 1.2s ease forwards;
+}
+
+.header-content h1{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:5.5rem;
+    color:var(--netflix-red);
+    letter-spacing:4px;
+}
+
+.header-content p{
+    margin-top:20px;
+    font-size:18px;
+    color:#ddd;
+    line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:sticky;
+    top:0;
+    background:rgba(20,20,20,.95);
+    backdrop-filter:blur(8px);
+    padding:18px 0;
+    z-index:100;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#ccc;
+    font-size:15px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+.navbar a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:var(--netflix-red);
+    transition:.3s;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after{
+    width:100%;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:#fff;
+}
+
+/* ================= SECCIÓN NOVELAS ================= */
+
+.novela-container{
+    padding:80px 8%;
+}
+
+.novela-container h2{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:32px;
+    margin-bottom:40px;
+    letter-spacing:3px;
+    color: #e50914;
+}
+
+/* ================= GRID ================= */
+
+.novelas-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:25px;
+}
+
+/* ================= CARDS ESTILO NETFLIX ================= */
+
+.novelas-card{
+    position:relative;
+    border-radius:8px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:transform .5s cubic-bezier(.2,.8,.2,1),
+               box-shadow .5s;
+    background:var(--bg-soft);
+}
+
+.novelas-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    display:block;
+    transition:transform .6s ease;
+}
+
+/* Overlay oscuro */
+
+.novelas-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, rgba(0,0,0,.95), transparent 60%);
+    opacity:0;
+    transition:.4s;
+    z-index:1;
+}
+
+/* Contenedor info */
+
+.card-info{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    z-index:2;
+    opacity:0;
+    transform:translateY(20px);
+    transition:.4s;
+}
+
+.card-info h3{
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.card-info p{
+    font-size:13px;
+    color:var(--text-soft);
+}
+
+/* Hover efecto premium */
+
+.novelas-card:hover{
+    transform:scale(1.12);
+    z-index:10;
+    box-shadow:0 30px 60px rgba(0,0,0,.8);
+}
+
+.novelas-card:hover img{
+    transform:scale(1.1);
+}
+
+.novelas-card:hover::before{
+    opacity:1;
+}
+
+.novelas-card:hover .card-info{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0f0f0f;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:80px;
+    color:#777;
+    font-size:14px;
+    border-top:1px solid #222;
+}
+
+footer strong{
+    color:var(--netflix-red);
+}
+
+/* ================= ANIMACIONES ================= */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .header{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .header-content h1{
+        font-size:3.2rem;
+    }
+
+    .novelas-grid{
+        grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    }
+
+    .novelas-card img{
+        height:240px;
+    }
+}

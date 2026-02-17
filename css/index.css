@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    background:#141414;
+    color:#fff;
+}
+
+
+
+header{
+    position:relative;
+    overflow:hidden;
+}
+
+
+
+header video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:brightness(55%);
+}
+
+
+
+header::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, rgba(0,0,0,.95), rgba(0,0,0,.3));
+}
+
+
+
+header h1{
+    position:center;
+    font-family:'Bebas Neue', sans-serif;
+    color: #e50914;
+    z-index:2;
+    font-size: 4rem;
+
+
+}
+header p{
+    font-family:'Bebas Neue', sans-serif;
+    color: white;
+    z-index:2;
+}
+
+
+
+header{
+    height:75vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+
+
+nav{
+    background:#000;
+    border-bottom:1px solid #222;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul li a{
+    display:block;
+    padding:15px 25px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#e50914;
+}
+
+
+
+.container{
+    padding:30px;
+}
+
+section h2{
+    font-family:'Bebas Neue', sans-serif;
+    margin-bottom:20px;
+    color:#e50914;
+    font-size:32px;
+    letter-spacing:1px;
+}
+
+/* GRID */
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap:18px;
+}
+
+/* CARD */
+
+.card{
+    background:#1c1c1c;
+    border-radius:6px;
+    overflow:hidden;
+    transition:0.3s;
+    cursor:pointer;
+    position:relative;
+}
+
+.card:hover{
+    transform:scale(1.08);
+    z-index:5;
+    box-shadow:0 0 20px rgba(229,9,20,0.7);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card h3{
+    font-size:18px;
+    margin:10px;
+    font-weight:600;
+}
+
+.card p{
+    font-size:13px;
+    color:#bbb;
+    margin:0 10px 15px;
+}
+
+/* FOOTER */
+
+
+footer{
+    background:#0f0f0f;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:80px;
+    color:#777;
+    font-size:14px;
+    border-top:1px solid #222;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#e50914;
+    border-radius:5px;
+}
